@@ -4,7 +4,7 @@ document.querySelector(".textInput").addEventListener('keyup', (e) => {
     isCorrectUntil(inputValue, nowWord);
 });
 
-function isCorrectUntil(inputValue, nowWord) {//checks is everything is correct until whats already was wrote
+function isCorrectUntil(inputValue, nowWord) {//checks is everything if correct until whats already was wrote
     let writtenSize = inputValue.length;
     let wordCompatible = nowWord.substring(0, writtenSize);
     if (inputValue == wordCompatible) {
